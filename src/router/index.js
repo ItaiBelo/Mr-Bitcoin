@@ -10,7 +10,11 @@ const routerOptions =
       component: HomePage /// mounts automaticaly
     },
     {
-      path: '/about',
+      path: '/contacts',
+      // component: Contacts /// mounts automaticaly
+    },
+    {
+      path: '/statistics',
       // component: () => import('../pages/AboutView.vue') /// this cmp will mount only when its being called
     }
   ]

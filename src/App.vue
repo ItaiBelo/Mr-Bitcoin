@@ -1,16 +1,20 @@
-<script setup>
+<script>
+import AppHeader from '@/cmps/app-header.vue'
+import AppFooter from '@/cmps/app-footer.vue'
+export default {
+    components: {
+        AppHeader,
+        AppFooter,
+    },
+}
 </script>
 
 <template>
-  <header>
-    <div class="wrapper">
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-      </nav>
-    </div>
-  </header>
-
-  <RouterView />
+    <AppHeader />
+    <main>
+        <RouterView />
+    </main>
+    <AppFooter />
 </template>
+
 
