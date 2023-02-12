@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomePage from '../pages/home-page.vue'
+import Contacts from '../pages/contacts.vue'
+import Statistics from '../pages/Statistics.vue'
 
 const routerOptions =
 {
@@ -11,12 +13,13 @@ const routerOptions =
     },
     {
       path: '/contacts',
-      // component: Contacts /// mounts automaticaly
+      component: Contacts /// mounts automaticaly
     },
     {
       path: '/statistics',
-      // component: () => import('../pages/AboutView.vue') /// this cmp will mount only when its being called
-    }
+      component: Statistics /// mounts automaticaly
+    },
+
   ]
 }
 

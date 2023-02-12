@@ -1,12 +1,16 @@
 <template>
-    <header>
-        <h1>logo</h1>
-        <nav>
+    <section  class="app-header">
+        <span >
+            <RouterLink to="/">
+            <img  class="app-header-logo" src="../assets/images/logo.png" alt="">
+        </RouterLink>
+    </span>
+        <nav class="links-nav ">
             <RouterLink to="/">Home</RouterLink>
-            <RouterLink to="/contact">Contacts</RouterLink>
+            <RouterLink to="/contacts">Contacts</RouterLink>
             <RouterLink to="/statistics">Statistics</RouterLink>
         </nav>
-    </header>
+    </section>
 </template>
 
 <script>

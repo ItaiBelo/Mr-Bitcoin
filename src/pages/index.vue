@@ -1,17 +1,19 @@
-<template>
-<app-header/>
-<router-view/>
-<app-footer/>
-</template>
-
 <script>
-import AppFooter from '../cmps/app-footer.vue'
-import appHeader from '../cmps/app-header.vue'
+import AppHeader from '@/app-header.vue'
+import AppFooter from '@/app-footer.vue'
 export default {
-  components: { appHeader, AppFooter },
-
+  components: { AppHeader, AppFooter },
+  
 }
 </script>
+
+<template>
+    <app-header/>
+    <main>
+        <router-view/>
+    </main>
+    <app-footer/>
+</template>
 
 <style>
 
