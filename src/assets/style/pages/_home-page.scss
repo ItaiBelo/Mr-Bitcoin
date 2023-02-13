@@ -1,0 +1,158 @@
+.home-main-page {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	overflow: hidden;
+}
+
+.home-content-container {
+	display: flex;
+	justify-content: space-around;
+	padding: 25px 55px 0px 20px;
+	margin-bottom: 35px;
+	height: 100%;
+}
+
+.login-section {
+	max-width: 560px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	.login-section-title {
+		width: 80%;
+	}
+
+	.login-btns {
+		width: 80%;
+
+		h3 {
+			font-size: fs20();
+			font-weight: 400;
+		}
+
+		.sign-up-button-container {
+			background-color: $golden-yellow;
+			height: 55px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 5px;
+			font-weight: 500;
+			&:hover {
+				cursor: pointer;
+				opacity: 0.95;
+			}
+		}
+		.separator {
+			display: flex;
+			align-items: center;
+			height: 40px;
+		}
+
+		.separator-line {
+			height: 1px;
+			width: 100%;
+			background-color: lightgray;
+			flex: 1 1 0px;
+		}
+
+		.separator-text {
+			margin: 0 8px 0 16px;
+			width: 125px;
+			font-weight: 500;
+			color: $text-gray;
+		}
+	}
+	.sign-in-btns-container {
+		display: flex;
+		justify-content: space-around;
+
+		& button {
+			height: 45px;
+			width: 165px;
+			border: none;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: rem(15px);
+			font-weight: 500;
+			color: $text-gray;
+			&:hover {
+				border-radius: 5px;
+				transition: 0.4s ease;
+				background-color: lightgray;
+			}
+			& img {
+				height: 20px;
+				margin-right: 6px;
+			}
+		}
+	}
+}
+
+.coins-values-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 325px;
+	min-width: 225px;
+
+	.coin-cards-container {
+		max-height: 500px;
+	}
+
+	.coin-cards-header {
+		display: flex;
+		justify-content: space-between;
+		color: $text-gray;
+		padding: 5px 10px;
+	}
+
+	.coin-card {
+		display: flex;
+		justify-content: space-between;
+		padding: 5px 10px;
+		border-radius: 5px;
+		align-items: center;
+
+		&:hover {
+			cursor: pointer;
+			background-color: lightgray;
+		}
+	}
+	.coin-card-inner-container {
+		display: flex;
+		align-items: center;
+		gap: 15px;
+		img {
+			height: 35px;
+		}
+	}
+}
+.home-footer {
+	padding: 15px 55px;
+	display: flex;
+	gap: 35px;
+	min-height: 200px;
+	justify-content: space-around;
+
+	.footer-text-card {
+		position: relative;
+		bottom: 0;
+		display: flex;
+		flex-direction: column;
+		padding: 5px;
+		width: 25%;
+		height: 90px;
+
+		.text-card-title {
+			font-size: rem(40px);
+			font-weight: 700;
+		}
+		.text-card-text {
+			font-size: fs16();
+		}
+	}
+}
