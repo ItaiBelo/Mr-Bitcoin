@@ -19,6 +19,7 @@
 				console.log(coin);
 			},
 		},
+		components: {},
 		async mounted() {
 			const coinsPrices = await bitcoinService.getMarketPriceHistory();
 			this.coinsData = [
@@ -29,7 +30,6 @@
 				{ symbol: 'MATIC', price: coinsPrices.MATIC.USD, src: maticLogo },
 			];
 		},
-		components: {},
 	};
 </script>
 
